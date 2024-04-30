@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Titles</title>
+    <style>
+        body{
+            background-color:aqua;
+        }
+        </style>
+</head>
+<body>
+    <div id="titleContainer">
+        
+    </div>
+
+    <script>
+        // Titles array
+        var titles = ["Title 1", "Title 2", "Title 3"];
+
+        // Get the container element
+        var container = document.getElementById('titleContainer');
+        </script>script src="rio.js"></script>
+
+        // Loop through titles and append them to the container
+        titles.forEach(function(title) {
+            var titleElement = document.createElement('h2');
+            titleElement.textContent = title;
+            container.appendChild(titleElement);
+        });
+    </script>
+</body>
+</html>
